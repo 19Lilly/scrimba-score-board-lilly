@@ -5,4 +5,7 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
+    max-width: 75%;
+    margin: auto;
+    border: 3px solid black;
 }
