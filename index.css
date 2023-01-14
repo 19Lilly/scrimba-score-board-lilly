@@ -5,7 +5,28 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     max-width: 75%;
     margin: auto;
     border: 3px solid black;
+}
+
+#home-score {
+    width: 155px;
+    height: 120px;
+    border: 3px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#guest-score {
+    width: 155px;
+    height: 120px;
+    border: 3px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

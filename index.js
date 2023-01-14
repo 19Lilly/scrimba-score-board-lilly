@@ -1,2 +1,5 @@
-let homeScore = document.getElementsById("home-score")
-console.log(homeScore)
+let homeScore = document.getElementById("home-score");
+
+
+
+
