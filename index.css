@@ -6,13 +6,19 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    max-width: 75%;
+    max-width: 40%;
     margin: auto;
     border: 3px solid black;
-   font: CursedTimerUlil-Aznm;
+    
 }
 
-#home-score {
+@font-face {
+    font-family: CursedTimerUlil;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+
+.score-container {
     width: 155px;
     height: 120px;
     border: 3px dashed black;
@@ -20,14 +26,28 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-family: CursedTimerUlil;
+    font-size: 70px;
+}
+
+.add-points-btn{
+    width: 155px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto 20px auto;
+}
+
+#add1, #add2, #add3 {
+    font-family: CursedTimerUlil;
+    font-size: 20px;
+}
+
+
+#home-score {
+    
 }
 
 #guest-score {
-    width: 155px;
-    height: 120px;
-    border: 3px dashed black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    
 }
