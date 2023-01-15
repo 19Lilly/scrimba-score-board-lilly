@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
@@ -7,8 +10,11 @@ body {
     justify-content: space-around;
     text-align: center;
     max-width: 80%;
+    width: 575px;
+    height: 385px;
     margin: auto;
     border: 3px solid black;
+    background-color: #075985;
     
 }
 
@@ -17,6 +23,9 @@ body {
     src: url(CursedTimerUlil-Aznm.ttf);
 }
 
+h1{
+    color: #EEEEEE;
+}
 
 .score-container {
     width: 155px;
@@ -28,6 +37,8 @@ body {
     align-content: center;
     font-family: CursedTimerUlil;
     font-size: 70px;
+    color:#F94F6D;
+    background-color: black;
 }
 
 .add-points-btn{
@@ -41,7 +52,9 @@ body {
 #add1, #add2, #add3 {
     font-family: CursedTimerUlil;
     font-size: 20px;
-}
+    color: #9AABD8;
+    border: 1px solid #BAE6FD;
+    background-color: none;
 
 
 #home-score {
