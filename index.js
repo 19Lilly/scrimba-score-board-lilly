@@ -58,34 +58,31 @@ const findTimeString = () => {
     seconds = "0" + seconds;
   }
   return minutes + seconds;
-};
+}
 
 // Function to start Countdown
-const startTimer = () => {
+startTimer() {
   if (isStopped) {
     isStopped = false;
     timerID = setInterval(runCountDown, 500);
   }
-};
+}
 
 // Function to stop Countdown
-const stopTimer = () => {
+stopTimer() {
   isStopped = true;
   if (timerID) {
     clearInterval(timerID);
   }
-};
+}
 
 // Function to reset Countdown
-const resetTimer = () => {
+ resetTimer()  {
   stopTimer();
   countDownTime = defaultValue;
   renderTime();
 };
 
-// Initialize alarm sound
-timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
-timeoutAudio.load();
 
 // Attach onclick event to buttons
 startAction.onclick = startTimer;
@@ -98,7 +95,7 @@ const renderTime = () => {
   countContainer.forEach((count, index) => {
     count.innerHTML = time.charAt(index);
   });
-};
+}
 
 // function to execute timer
 const runCountDown = () => {
