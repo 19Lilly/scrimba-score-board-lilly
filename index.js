@@ -22,19 +22,6 @@ function addPoints(team,score) {
     }
 }
 
-function newGame () {
-    homeScore = 0
-    guestScore = 0
-    min = 4
-    sec = 59
-    homeScoreEl.textContent = homeScore
-    guestScoreEl.textContent = guestScore
-    timerEl.textContent = "5:00"
-    
-    
-}
-
-
                     document.getElementById('pause').style.display = 'none';
                     function startTimer() {
                     var btton = document.getElementById('start').style.display = 'none';
@@ -62,4 +49,16 @@ function pause() {
   clearInterval(timerId);
   document.getElementById('start').style.display = 'inline';
   document.getElementById('pause').style.display = 'none';
+}
+
+
+function newGame () {
+  homeScore = 0
+  guestScore = 0
+  min = 4
+  sec = 59
+  homeScoreEl.textContent = homeScore
+  guestScoreEl.textContent = guestScore
+  timerEl.textContent = "5:00"
+  isplay = false;
 }

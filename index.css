@@ -64,6 +64,7 @@ button {
     color: #7DD3FC;
     border: 1px solid #7DD3FC;
     background-color: #075985;
+    box-shadow: 2px 2px 1px black;
 }
 
 .main-part {
