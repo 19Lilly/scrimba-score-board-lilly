@@ -50,7 +50,7 @@ h1{
 }
 
 .timer-handle-btn {
-    width: 200px;
+    width: 155px;
     height: 35px;
     display: flex;
     flex-direction: row;
@@ -107,7 +107,7 @@ button {
 #timer {
     padding: 10px 30px;
     height: 45px;
-    width:200px;
+    width:155px;
     font-family: CursedTimerUlil;
     font-size: 24px;
     color: #7DD3FC;
