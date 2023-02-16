@@ -24,93 +24,34 @@ function newGame () {
     guestScoreEl.textContent = guestScore
 }
 
-// Select Every Count Container
-const countContainer = document.querySelectorAll(".count-digit");
+var timerId;
+var min = 4;
+                    var sec = 59;
+                    var isplay = true;
+                    document.getElementById('pause').style.display = 'none';
+                function startTimer() {
+                    var btton = document.getElementById('start').style.display = 'none';
+                    document.getElementById('pause').style.display = 'inline';
+                    
+                    timerId = setInterval(function () {
+                        document.getElementById('timer').innerHTML = min + ":" + sec;
+                        sec--;
+                        if (sec == -1) {
+                            min--;
+                            sec = 59;
+                        }
+                        if (min == -1) {
+                            clearTimeout(timerId);
+                        }
+                        if (sec < 10) {
+                            sec = "0" + sec;
+                        }
 
-// Select option buttons
-const startAction = document.getElementById("start-timer");
-const stopAction = document.getElementById("stop-timer");
-const resetAction = document.getElementById("reset-timer");
+                    }, 1000);
+                }
 
-// Select HTML5 Audio element
-const timeoutAudio = document.getElementById("alarm_audio");
-
-// Default inital value of timer
-const defaultValue = 5 * 60;
-
-// variable to the time
-var countDownTime = defaultValue;
-
-// variable to store time interval
-var timerID;
-
-// Variable to track whether timer is running or not
-var isStopped = true;
-
-// Function calculate time string
-const findTimeString = () => {
-  var minutes = String(Math.trunc(countDownTime / 60));
-  var seconds = String(countDownTime % 60);
-  if (minutes.length === 1) {
-    minutes = "0" + minutes;
-  }
-  if (seconds.length === 1) {
-    seconds = "0" + seconds;
-  }
-  return minutes + seconds;
+function pause() {
+  clearInterval(timerId);
+  document.getElementById('start').style.display = 'inline';
+  document.getElementById('pause').style.display = 'none';
 }
-
-// Function to start Countdown
-startTimer() {
-  if (isStopped) {
-    isStopped = false;
-    timerID = setInterval(runCountDown, 500);
-  }
-}
-
-// Function to stop Countdown
-stopTimer() {
-  isStopped = true;
-  if (timerID) {
-    clearInterval(timerID);
-  }
-}
-
-// Function to reset Countdown
- resetTimer()  {
-  stopTimer();
-  countDownTime = defaultValue;
-  renderTime();
-};
-
-
-// Attach onclick event to buttons
-startAction.onclick = startTimer;
-resetAction.onclick = resetTimer;
-stopAction.onclick = stopTimer;
-
-// Function to display countdown on screen
-const renderTime = () => {
-  const time = findTimeString();
-  countContainer.forEach((count, index) => {
-    count.innerHTML = time.charAt(index);
-  });
-}
-
-// function to execute timer
-const runCountDown = () => {
-  // decement time
-  countDownTime -= 1;
-  //Display updated time
-  renderTime();
-
-  // timeout on zero
-  if (countDownTime === 0) {
-    stopTimer();
-    // Play alarm on timeout
-    timeoutAudio.play();
-    countDownTime = defaultValue;
-  }
-};
-
-

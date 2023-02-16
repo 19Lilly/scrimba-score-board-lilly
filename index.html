@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script> 
     </head>
     <body>
         <div class="container">
@@ -16,17 +15,12 @@
                     </div>
                 </div>
                 <div class="wrapper">
-                    <div class="timer">
-                        <span class="count-digit">0</span>
-                        <span class="count-digit">5</span>
-                        <span class="separator">:</span>
-                        <span class="count-digit">0</span>
-                        <span class="count-digit">0</span>
+                    <div id="timer">
+                            <div id="time">5:00</div>
                     </div>
                     <div class="timer-handle-btn">
-                            <button onclick="startTimer()"><img src="./images/211800_play_icon.png" alt="play icon which starts the timer"> </button>
-                            <button onclick="stopTimer()"><img src="./images/211790_pause_icon.png" alt="pause icon which pauses the timer"> </button>
-                            <button onclick="resetTimer()"><img src="./images/9025102_stop_light_icon.png" alt="stop icon which stops the timer"></button>    
+                            <button id="start" onclick="return startTimer()"><img src="./images/211800_play_icon.png" alt="play icon which starts the timer"> </button>
+                            <button id="pause" onclick="pause()"><img src="./images/211790_pause_icon.png" alt="pause icon which pauses the timer"> </button>    
                     </div>
                 </div>
                 <div>
@@ -47,7 +41,8 @@
         </div>
            
 
-     
+        <script src="index.js"></script> 
+    
        
     </body>
 </html>

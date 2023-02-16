@@ -104,7 +104,7 @@ button {
     height: 150px; 
 }
 
-.timer {
+#timer {
     padding: 10px 30px;
     height: 45px;
     width:200px;
