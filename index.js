@@ -1,10 +1,15 @@
 
 let homeScoreEl = document.getElementById("home-score");
 let guestScoreEl = document.getElementById("guest-score");
+let timerEl = document.getElementById("timer");
 
 let homeScore = 0; 
 let guestScore = 0;
 
+var timerId;
+var min = 4;
+var sec = 59;
+var isplay = true;
 
 function addPoints(team,score) {
     if (team == 'home') {
@@ -20,21 +25,23 @@ function addPoints(team,score) {
 function newGame () {
     homeScore = 0
     guestScore = 0
+    min = 4
+    sec = 59
     homeScoreEl.textContent = homeScore
     guestScoreEl.textContent = guestScore
+    timerEl.textContent = "5:00"
+    
+    
 }
 
-var timerId;
-var min = 4;
-                    var sec = 59;
-                    var isplay = true;
+
                     document.getElementById('pause').style.display = 'none';
-                function startTimer() {
+                    function startTimer() {
                     var btton = document.getElementById('start').style.display = 'none';
                     document.getElementById('pause').style.display = 'inline';
                     
                     timerId = setInterval(function () {
-                        document.getElementById('timer').innerHTML = min + ":" + sec;
+                        document.getElementById('timer').textContent = min + ":" + sec;
                         sec--;
                         if (sec == -1) {
                             min--;
@@ -42,6 +49,7 @@ var min = 4;
                         }
                         if (min == -1) {
                             clearTimeout(timerId);
+                            isplay=false;
                         }
                         if (sec < 10) {
                             sec = "0" + sec;
