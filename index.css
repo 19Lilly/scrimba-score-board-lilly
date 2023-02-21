@@ -8,11 +8,10 @@ body {
 
 .container {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    width: 575px;
+    width: 500px;
     height: 385px;
     margin: auto;
     background-color: #075985; 
@@ -53,7 +52,7 @@ h1{
 }
 
 .timer-handle-btn {
-    width: 162px;
+    width: 100px;
     height: 35px;
     display: flex;
     flex-direction: row;
@@ -82,7 +81,7 @@ button {
 }
 
 .bottom-part {
-    width: 555px;
+    width: 480px;
     display: flex;
     margin-bottom: 25px;
     justify-content: space-around;
@@ -101,6 +100,8 @@ button {
     background-color: #075985;
 }
 
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@ button {
 #timer {
     padding: 10px 20px;
     height: 48px;
-    width:162px;
+    width: 100px;
     font-family: CursedTimerUlil;
     font-size: 24px;
     color: #7DD3FC;
