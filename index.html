@@ -8,36 +8,28 @@
                 <div>
                     <h1>HOME</h1>
                     <div class="score-container" id="home-score">0</div>
-                    <div class="add-points-btn">
-                        <button onclick="addPoints('home',1)">+1</button>
-                        <button onclick="addPoints('home',2)">+2</button>
-                        <button onclick="addPoints('home',3)">+3</button>
-                    </div>
+                        <button class="add-points-btn" onclick="addPoints('home',1)">+1</button>
+                        <button class="add-points-btn" onclick="addPoints('home',2)">+2</button>
+                        <button class="add-points-btn" onclick="addPoints('home',3)">+3</button>   
                 </div>
-                <div class="wrapper">
-                    <div id="timer">
-                            <div id="time">5:00</div>
-                    </div>
-                    <div class="timer-handle-btn">
-                            <button id="start" onclick="return startTimer()"><img src="./images/211800_play_icon.png" alt="play icon which starts the timer"> </button>
-                            <button id="pause" onclick="pause()"><img src="./images/211790_pause_icon.png" alt="pause icon which pauses the timer"> </button>    
-                    </div>
+                
+                <div id="timer">
+                        <div id="time">5:00</div>
+                        <button class="timer-handle-btn" id="start" onclick="return startTimer()"><img src="./images/211800_play_icon.png" alt="play icon which starts the timer"> </button>
+                        <button class="timer-handle-btn" id="pause" onclick="pause()"><img src="./images/211790_pause_icon.png" alt="pause icon which pauses the timer"> </button>    
                 </div>
+                
                 <div>
                     <h1>GUEST</h1>
                     <div class="score-container" id="guest-score">0</div>
-                    <div class="add-points-btn">
-                        <button onclick="addPoints('guest',1)">+1</button>
-                        <button onclick="addPoints('guest',2)">+2</button>
-                        <button onclick="addPoints('guest',3)">+3</button>
-                    </div>
+                        <button class="add-points-btn" onclick="addPoints('guest',1)">+1</button>
+                        <button class="add-points-btn" onclick="addPoints('guest',2)">+2</button>
+                        <button class="add-points-btn" onclick="addPoints('guest',3)">+3</button>
                 </div>
             </div>
 
-            <div class="bottom-part">
                 <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
-            </div>
-
+            
         </div>
            
 
