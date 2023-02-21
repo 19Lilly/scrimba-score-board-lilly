@@ -13,11 +13,11 @@ var isplay = false;
 
 function addPoints(team,score) {
     whoIsWinning()
-    if (team == 'home' && isplay == true) {
+    if (team === 'home' && isplay === true) {
         homeScore += score
         homeScoreEl.textContent = homeScore
     }
-    else if (team =='guest' && isplay == true){
+    else if (team ==='guest' && isplay === true){
         guestScore += score
         guestScoreEl.textContent = guestScore
     }
