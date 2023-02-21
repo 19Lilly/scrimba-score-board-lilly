@@ -53,7 +53,7 @@ h1{
 }
 
 .timer-handle-btn {
-    width: 155px;
+    width: 162px;
     height: 35px;
     display: flex;
     flex-direction: row;
@@ -82,7 +82,7 @@ button {
 }
 
 .bottom-part {
-    width: 575px;
+    width: 555px;
     display: flex;
     margin-bottom: 25px;
     justify-content: space-around;
@@ -91,6 +91,7 @@ button {
 
 #new-game-btn, #start-game-btn {
     padding: 10px 20px;
+    width: 162px;
     display: flex;
     justify-content: center;
     font-family: CursedTimerUlil;
