@@ -29,6 +29,7 @@ function addPoints(team,score) {
                     document.getElementById('pause').style.display = 'none';
                     function startTimer() {
                     isplay = true;
+                    document.getElementById('new-game-btn').disabled=true;
                     var btton = document.getElementById('start').style.display = 'none';
                     document.getElementById('pause').style.display = 'inline';
                     
@@ -46,18 +47,18 @@ function addPoints(team,score) {
                         if (sec < 10) {
                             sec = "0" + sec;
                         }
-
                     }, 1000);
-                    document.getElementById('new-game-btn').disabled=true;
+                   
 
                 }
 
 function pause() {
   clearInterval(timerId);
   isplay = false;
+  document.getElementById('new-game-btn').disabled=false;
   document.getElementById('start').style.display = 'inline';
   document.getElementById('pause').style.display = 'none';
-  document.getElementById('new-game-btn').disabled=false;
+  
 }
 
 
