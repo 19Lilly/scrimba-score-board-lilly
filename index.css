@@ -10,7 +10,7 @@ body {
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     width: 575px;
     height: 385px;
@@ -84,9 +84,8 @@ button {
 .bottom-part {
     width: 575px;
     display: flex;
-    justify-content: center;
-    gap:12px;
     margin-bottom: 25px;
+    justify-content: space-around;
     
 }
 
@@ -110,8 +109,8 @@ button {
 
 #timer {
     padding: 10px 20px;
-    height: 45px;
-    width:155px;
+    height: 42px;
+    width:162px;
     font-family: CursedTimerUlil;
     font-size: 24px;
     color: #7DD3FC;
