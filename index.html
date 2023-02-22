@@ -1,11 +1,13 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
        <div class="container">
+            
             <div class="main-part">
-                <div>
+                <div class="col">
                     <h1>HOME</h1>
                     <div class="score-container" id="home-score">0</div>
                     <div class="add-points-btn">
@@ -15,13 +17,13 @@
                     </div> 
                 </div>
                 
-                <div>
+                <div class="col-1">
                     <div id="timer">5:00</div>
                     <button class="timer-handle-btn" id="start" onclick="return startTimer()"><img src="./images/211800_play_icon.png" alt="play icon which starts the timer"> </button>
                     <button class="timer-handle-btn" id="pause" onclick="pause()"><img src="./images/211790_pause_icon.png" alt="pause icon which pauses the timer"> </button>    
                 </div>
                 
-                <div>
+                <div class="col">
                     <h1>GUEST</h1>
                     <div class="score-container" id="guest-score">0</div>
                     <div class="add-points-btn">
@@ -32,7 +34,9 @@
                 </div>
             </div>
 
+            <div class="main-part">
                 <button id="new-game-btn" onclick="newGame()">NEW GAME</button>
+            </div>
         </div>    
         
            
