@@ -64,7 +64,7 @@ button {
 .timer-handle-btn {
     max-width: 100px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 #new-game-btn {
@@ -101,6 +101,7 @@ button {
     color: #7DD3FC;
     border: 1px solid #7DD3FC;
     background-color: #075985;
+    margin-top: 50px;
 }
 
 img {
