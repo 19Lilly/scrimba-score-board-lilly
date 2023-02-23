@@ -74,9 +74,6 @@ button {
 }
 
 .timer-handle-btn {
-    max-width: fit-content;
-    text-align: center;
-    height: 35px;
     margin-top: 5px;
 }
 
@@ -96,7 +93,7 @@ button {
     color: #7DD3FC;
     border: 1px solid #7DD3FC;
     background-color: #075985;
-    margin-top: 73px;
+    margin-top: 68px;
 }
 
 img {
