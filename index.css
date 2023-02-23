@@ -11,15 +11,15 @@ body {
     margin: 0px;
     font-family: CursedTimerUlil;
     font-size: 24px;
+    
 }
 
 .container {
     margin: 25px auto;   
-    max-width: 500px;
+    max-width: 550px;
     background-color: #075985; 
     border: 10px solid #7DD3FC;
-    border-radius: 10px; 
-       
+    border-radius: 10px;        
 }
 
 .main-part {
@@ -28,10 +28,9 @@ body {
 }
 
 h1{
-    color: #EEEEEE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width:149px;
     font-size: 40px;
+    color: #EEEEEE;  
 }
 
 .col {
@@ -42,23 +41,19 @@ h1{
 .col-1{
     max-width: 100px;
     text-align: center;
-    margin-top:55px;
+    margin-top: 55px;
 }
 
 .score-container {
-    width:155px;
+    width: 155px;
     height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 90px;
-    color:#f40e38;
+    color: #f40e38;
     background-color: black;
-    border:none;
+    padding-top: 15px;
 }
 
 button {
-    font-size: 24px;
     color: #7DD3FC;
     border: 1px solid #7DD3FC;
     background-color: #075985;
@@ -67,7 +62,6 @@ button {
     margin: 15px 0;
     width: 45px;
     height: 45px;
-    text-align: center;
     padding: 3px 5px;
 } 
 
@@ -82,7 +76,7 @@ button {
 
 #new-game-btn {
     padding: 10px 20px;
-    margin: 20px 0px;
+    margin: 15px auto;
     width: 165px;
 }
 
