@@ -66,6 +66,7 @@ button {
     margin-top: 15px;
     width: 45px;
     height: 45px;
+    text-align: start;
 } 
 
 .add-points-btn {
