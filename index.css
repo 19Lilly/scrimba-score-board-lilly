@@ -79,15 +79,15 @@ button {
 
 #new-game-btn {
     padding: 10px 20px;
-    margin: 20px auto;
-    width: fit-content;
+    margin: 20px 0px;
+    width: 165px;
 }
 
 
 #timer {
     padding: 10px 20px;
     height: 48px;
-    max-width: fit-content;
+    width: fit-content;
     font-family: CursedTimerUlil;
     font-size: 24px;
     color: #7DD3FC;
