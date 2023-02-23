@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: CursedTimerUlil;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
 body {
     margin: 0px;
 }
@@ -18,11 +23,6 @@ body {
 .main-part {
     display: flex;
     justify-content: space-evenly;
-}
-
-@font-face {
-    font-family: CursedTimerUlil;
-    src: url(CursedTimerUlil-Aznm.ttf);
 }
 
 h1{
@@ -50,7 +50,7 @@ h1{
     align-items: center;
     font-family: CursedTimerUlil;
     font-size: 90px;
-    color:#F94F6D;
+    color:#f40e38;
     background-color: black;
     border:none;
 }
