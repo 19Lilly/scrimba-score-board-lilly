@@ -63,12 +63,12 @@ button {
     background-color: #075985;
     box-shadow: 2px 2px 1px black;
     border-radius: 10px;
+    margin: 15px auto;
+    width: 45px;
+    height: 45px;
 } 
 
 .add-points-btn {
-    height: 45px;
-    width: 45px;
-    margin-top: 10px;
     display: flex;
 	justify-content:space-between;
     gap: 10px;
@@ -83,14 +83,7 @@ button {
 #new-game-btn {
     padding: 10px 20px;
     margin: 20px auto;
-    max-width: 340px;
-    display: flex;
-    align-self: center;
-    font-family: CursedTimerUlil;
-    font-size: 24px;
-    color: #7DD3FC;
-    border: 1px solid #7DD3FC;
-    background-color: #075985;
+    width: fit-content;
 }
 
 
