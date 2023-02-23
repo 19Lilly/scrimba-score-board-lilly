@@ -66,13 +66,12 @@ button {
 } 
 
 .add-points-btn {
-    max-width: 155px;
     height: 45px;
+    width: 45px;
     margin-top: 10px;
     display: flex;
-	justify-content:space-evenly;
-    gap:3px;
- 
+	justify-content:space-between;
+    gap: 10px;
 }
 
 .timer-handle-btn {
