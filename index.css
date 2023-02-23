@@ -75,6 +75,7 @@ button {
 
 .timer-handle-btn {
     max-width: fit-content;
+    text-align: center;
     height: 35px;
     margin-top: 5px;
 }
