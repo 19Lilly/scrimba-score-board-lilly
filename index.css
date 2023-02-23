@@ -11,7 +11,6 @@ body {
     margin: 0px;
     font-family: CursedTimerUlil;
     font-size: 24px;
-    
 }
 
 .container {
@@ -19,7 +18,8 @@ body {
     max-width: 550px;
     background-color: #075985; 
     border: 10px solid #7DD3FC;
-    border-radius: 10px;        
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #075985;        
 }
 
 .main-part {
@@ -31,6 +31,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     color: #EEEEEE;  
+    text-shadow: 1px 1px 2px black;
 }
 
 .col {
@@ -49,20 +50,22 @@ h1{
     height: 120px;
     font-size: 90px;
     color: #f40e38;
+    text-shadow: 1px 1px 2px black;
     background-color: black;
     padding-top: 15px;
 }
 
 button {
+    font-size: 24px;
     color: #7DD3FC;
     border: 1px solid #7DD3FC;
     background-color: #075985;
-    box-shadow: 2px 2px 1px black;
+    box-shadow: 2px 2px 2px black;
     border-radius: 10px;
     margin: 15px 0;
     width: 45px;
     height: 45px;
-    padding: 3px 5px;
+    padding: 10px 5px;
 } 
 
 .add-points-btn {
@@ -72,6 +75,7 @@ button {
 
 .timer-handle-btn {
     margin-top: 5px;
+    padding: 5px 5px;
 }
 
 #new-game-btn {
@@ -90,7 +94,7 @@ button {
 }
 
 img {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
 
