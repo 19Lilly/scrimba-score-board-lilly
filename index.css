@@ -11,12 +11,12 @@ body {
     margin: 0px;
     font-family: CursedTimerUlil;
     font-size: 24px;
-    min-width: 500px;
+    min-width:550px;
 }
 
 .container {
     margin: 25px auto;   
-    max-width: 500px;
+    width: 500px;
     background-color: #075985; 
     border: 10px solid #7DD3FC;
     border-radius: 10px;
