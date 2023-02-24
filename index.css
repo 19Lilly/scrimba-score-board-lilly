@@ -19,7 +19,7 @@ body {
     background-color: #075985; 
     border: 10px solid #7DD3FC;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px #075985;        
+    box-shadow: 10px 10px 10px #075985;      
 }
 
 .main-part {
@@ -48,13 +48,11 @@ h1{
 .score-container {
     width: 155px;
     height: 120px;
-    font-size: 90px;
+    font-size: 80px;
     color: #f40e38;
     text-shadow: 1px 1px 2px black;
     background-color: black;
     padding-top: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 button {
